@@ -11,8 +11,8 @@
     <header>
       <h1>TypeScript for Dummies: A Beginner's Guide to Cleaner Code</h1>
       <nav>
-        <a href="#">Home</a>
-        <a href="#">Resources</a>
+        <a href="#" id="home-link">Home</a>
+        <a href="#" id="resources-link">Resources</a>
       </nav>
     </header>
 
@@ -39,7 +39,7 @@
 <p>
   In JavaScript, you don’t have to say what type of data (numbers, words, true/false) something is. But with TypeScript, you tell it exactly what something is, and it keeps you from making mistakes.
 </p>
-<pre><code>let age: number = 10;  // Only numbers allowed in this box!</code></pre>
+<pre><code>let age: number = 10; </code></pre>
 
 <h3>3. TypeScript Helps You With Objects!</h3>
 <p>Example: Here’s how you can describe a person:</p>
@@ -49,15 +49,10 @@ interface Person {
   age: number;
 }
 
-let friend: Person = { name: "Lily", age: 12 };
+let friend: Person = { name: "Laura", age: 12 };
 </code></pre>
 
-<h3>4. Why Use TypeScript?</h3>
-<p>
-  It keeps you from making mistakes! TypeScript is like a guide that says, “Hold on, this piece doesn’t fit here,” before you continue building.
-</p>
-
-<h3>5. Classes and Objects</h3>
+<h3>4. Classes and Objects</h3>
 <p>TypeScript adds “classes” that describe objects in detail, like blueprints for houses:</p>
 <pre><code>
 class Car {
@@ -70,15 +65,15 @@ class Car {
   }
 
   drive() {
-    console.log("Vroom vroom!");
+    console.log("Engine sound");
   }
 }
 
-let myCar = new Car("Tesla", 2020);
-myCar.drive();  // Prints "Vroom vroom!"
+let myCar = new Car("BMW", 2020);
+myCar.drive();
 </code></pre>
 
-<h3>6. Superpowers (Generics and Unions)</h3>
+<h3>5. Superpowers (Generics and Unions)</h3>
 <p>
   <strong>Generics:</strong> It's like making a magic box that can hold any type of thing, but still checks it’s correct.
 </p>

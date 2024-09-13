@@ -90,3 +90,39 @@ footer {
     background-color: #333;
     color: #fff;
 }
+
+#blog-posts {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  #blog-posts h3 {
+    color: #333;
+    margin-top: 20px;
+  }
+  
+  #blog-posts p {
+    line-height: 1.6;
+    padding: 0 15px;
+  }
+  
+  #blog-posts pre {
+    background-color: #282c34; /* Dark background */
+    color: #e6e6e6; /* Light font color for better contrast */
+    padding: 15px;
+    border-radius: 8px;
+    overflow-x: auto;
+  }
+  
+  #blog-posts code {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #2d2d2d; /* Background for inline code */
+    color: #f8f8f2; /* Light color for code text */
+    padding: 2px 4px;
+    border-radius: 4px;
+  }
+  

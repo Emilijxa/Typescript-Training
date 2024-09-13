@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function showFullPost(postId) {
         const postContent = {
-            1: "TypeScript is like a puzzle helper! Imagine you're putting together a puzzle, and TypeScript tells you if the pieces don’t fit before you even try. It’s still JavaScript, but with extra rules to make sure everything fits perfectly. You don’t have to change much—just write your code, and TypeScript helps catch mistakes early so things don’t break later. It’s a smart way to write safer, more reliable code!",
+            1: "TypeScript is like a puzzle helper! Imagine you're putting together a puzzle, and TypeScript tells you if the pieces don’t fit before you even try. It’s still JavaScript, but with extra rules to make sure everything fits perfectly. You don’t have to change much—just write your code, and TypeScript helps catch mistakes early so things don’t break later. It’s a smart way to write safer, more reliable code.",
             2: `Before you write TypeScript, you need to install it. You use a tool called npm or yarn to do this. Just open your terminal and type: npm install -g typescript`
         };
 
@@ -58,7 +58,7 @@ function add(a: number, b: number): number {
 
 
             const explanation = document.createElement("p");
-            explanation.textContent = "This image explains how TypeScript is built on top of JavaScript (JS). JavaScript is at the core, and TypeScript adds extra features like interfaces and generics (more advanced tools) that help you write better code. TypeScript can’t be understood by the browser directly, so it gets turned into regular JavaScript (called compiling) before running. Think of it as adding more pieces to your puzzle to make it more powerful, but the final picture (code) is still made of JavaScript!";
+            explanation.textContent = "This image explains how TypeScript is built on top of JavaScript (JS). JavaScript is at the core, and TypeScript adds extra features like interfaces and generics (more advanced tools) that help you write better code. TypeScript can’t be understood by the browser directly, so it gets turned into regular JavaScript (called compiling) before running. Think of it as adding more pieces to your puzzle to make it more powerful, but the final picture (code) is still made of JavaScript.";
             postElement.appendChild(explanation); 
 
             const whyUseTypeScript = document.createElement("div");
