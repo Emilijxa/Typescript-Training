@@ -1,11 +1,33 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const readMoreButtons = document.querySelectorAll(".read-more");
 
+
+document.addEventListener("DOMContentLoaded", () => {
+    const homeLink = document.getElementById('home-link');
+    const resourcesLink = document.getElementById('resources-link');
+    const homeSection = document.getElementById('blog-posts');
+    const resourcesSection = document.getElementById('resources');
+
+    homeLink.addEventListener('click', (e) => {
+        e.preventDefault();
+        homeSection.style.display = 'block';
+        resourcesSection.style.display = 'none';
+    });
+
+    resourcesLink.addEventListener('click', (e) => {
+        e.preventDefault();
+        homeSection.style.display = 'none';
+        resourcesSection.style.display = 'block';
+    });
+
+
+
+
+
+    const readMoreButtons = document.querySelectorAll(".read-more");
     readMoreButtons.forEach(button => {
         button.addEventListener("click", function() {
             const postId = this.getAttribute("data-post");
             showFullPost(postId);
-            this.style.display = "none"; 
+            this.style.display = "none";
         });
     });
 
@@ -15,43 +37,16 @@ document.addEventListener("DOMContentLoaded", () => {
             2: `Before you write TypeScript, you need to install it. You use a tool called npm or yarn to do this. Just open your terminal and type: npm install -g typescript`
         };
 
-        const extraContent = `
-            <h3>2. From .js to .ts</h3>
-            <p>Start by changing your file from .js (JavaScript) to .ts (TypeScript). Rename script.js to script.ts!</p>
-            <h3>3. Declaring Types</h3>
-            <pre><code>let age: number = 10;</code></pre>
-            <p>This ensures that age is always a number.</p>
-            <h3>4. Objects in TypeScript</h3>
-            <pre><code>
-interface Person {
-  name: string;
-  age: number;
-}
-let person: Person = { name: "Lily", age: 12 };
-            </code></pre>
-            <p>Objects are more specific in TypeScript!</p>
-            <h3>5. Functions with TypeScript</h3>
-            <pre><code>
-function add(a: number, b: number): number {
-  return a + b;
-}
-            </code></pre>
-            <h3>6. TypeScript Catches Mistakes Early</h3>
-            <pre><code>let isCool: boolean = true;</code></pre>
-            <p>TypeScript stops errors like assigning wrong types.</p>
-            <h3>7. Running TypeScript</h3>
-            <p>Turn your .ts file into JavaScript by running:</p>
-            <pre><code>tsc yourFile.ts</code></pre>`;
-
         const postElement = document.querySelector(`[data-post='${postId}']`).parentElement;
         const postParagraph = postElement.querySelector("p");
         postParagraph.textContent = postContent[postId];
 
 
 
+
         if (postId === "1") {
             const image = document.createElement("img");
-            image.src = "/images/typescript.png"
+            image.src = "https://media.licdn.com/dms/image/C4E12AQGjvH3eTBDdmg/article-cover_image-shrink_600_2000/0/1597593610760?e=2147483647&v=beta&t=rMt8_v4wXHDrrndOaO6L-n9XS4lNFCxFZFEinEYKX20";
             image.alt = "TypeScript Example";
             image.style.width = "70%"; 
             postElement.appendChild(image);
@@ -71,17 +66,6 @@ function add(a: number, b: number): number {
             </ul> 
             `;
             postElement.appendChild(whyUseTypeScript);
-         }}
-
-            if (postId === "2") {
-                        postParagraph.innerHTML = postContent[postId]; // Use innerHTML for rendering <code> tag properly
-                        const extraDiv = document.createElement("div");
-                        extraDiv.innerHTML = extraContent;
-                        postElement.appendChild(extraDiv);
-                    }
-
-
-
+         }
+    }
 });
-
-

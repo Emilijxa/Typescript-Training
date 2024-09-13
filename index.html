@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- Header Section -->
+
+
+
     <header>
       <h1>TypeScript for Dummies: A Beginner's Guide to Cleaner Code</h1>
       <nav>
@@ -16,8 +18,13 @@
       </nav>
     </header>
 
-    <!-- Main Content Section -->
+
     <main>
+
+
+
+
+
       <section id="blog-posts">
         <article class="post">
           <h3>What is TypeScript</h3>
@@ -32,29 +39,29 @@
           <p>
             Before you write TypeScript, you need to install it. You use a tool called npm or yarn to do this. Just open your terminal and type: npm install -g typescript.
           </p>
-          <p>Change .js files to .ts</div>:</p>
-<pre><code>tsc fileName.ts</code></pre>
+          <p>Change .js files to .ts:</p>
+          <pre><code>tsc fileName.ts</code></pre>
 
           <h3>2. Types Are Important!</h3>
-<p>
-  In JavaScript, you don’t have to say what type of data (numbers, words, true/false) something is. But with TypeScript, you tell it exactly what something is, and it keeps you from making mistakes.
-</p>
-<pre><code>let age: number = 10; </code></pre>
+          <p>
+            In JavaScript, you don’t have to say what type of data (numbers, words, true/false) something is. But with TypeScript, you tell it exactly what something is, and it keeps you from making mistakes.
+          </p>
+          <pre><code>let age: number = 10; </code></pre>
 
-<h3>3. TypeScript Helps You With Objects!</h3>
-<p>Example: Here’s how you can describe a person:</p>
-<pre><code>
+          <h3>3. TypeScript Helps You With Objects!</h3>
+          <p>Example: Here’s how you can describe a person:</p>
+          <pre><code>
 interface Person {
   name: string;
   age: number;
 }
 
 let friend: Person = { name: "Laura", age: 12 };
-</code></pre>
+          </code></pre>
 
-<h3>4. Classes and Objects</h3>
-<p>TypeScript adds “classes” that describe objects in detail, like blueprints for houses:</p>
-<pre><code>
+          <h3>4. Classes and Objects</h3>
+          <p>TypeScript adds “classes” that describe objects in detail, like blueprints for houses:</p>
+          <pre><code>
 class Car {
   make: string;
   year: number;
@@ -71,30 +78,36 @@ class Car {
 
 let myCar = new Car("BMW", 2020);
 myCar.drive();
-</code></pre>
+          </code></pre>
 
-<h3>5. Superpowers (Generics and Unions)</h3>
-<p>
-  <strong>Generics:</strong> It's like making a magic box that can hold any type of thing, but still checks it’s correct.
-</p>
-<pre><code>function magicBox<T>(item: T): T { return item; }</code></pre>
+          <h3>5. Superpowers (Generics and Unions)</h3>
+          <p><strong>Generics:</strong> It's like making a magic box that can hold any type of thing, but still checks it’s correct.</p>
+          <pre><code>function magicBox<T>(item: T): T { return item; }</code></pre>
 
-<p>
-  <strong>Unions:</strong> Allow more than one type of thing:
-</p>
-<pre><code>let id: string | number;  // Can be a number OR a word</code></pre>
-
+          <p><strong>Unions:</strong> Allow more than one type of thing:</p>
+          <pre><code>let id: string | number;  // Can be a number OR a word</code></pre>
         </article>
       </section>
+
+
+
+
+
+      <section id="resources" style="display: none;">
+        <h2>Useful Resources</h2>
+        <ul>
+          <li><a href="https://youtu.be/ahCwqrYpIuM?si=CHPBCqafeZwuQoB4">TypeScript Basics Video</a></li>
+          <li><a href="https://www.typescriptlang.org/docs/handbook/typescript-from-scratch.html">TypeScript for New Programmers</a></li>
+          <li><a href="https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html">TypeScript for JavaScript Programmers</a></li>
+          <li><a href="https://www.freecodecamp.org/news/learn-typescript-beginners-guide/">freeCodeCamp Guide</a></li>
+          <li><a href="https://www.typescriptlang.org/docs/">TypeScript Official Documentation</a></li>
+        </ul>
+      </section>
     </main>
-
-
 
     <footer>
       <p>© 2024 Written by Emilija</p>
     </footer>
-
-
 
     <script src="script.js"></script>
   </body>
